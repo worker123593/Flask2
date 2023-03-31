@@ -1,0 +1,10 @@
+{% extends "base.html"%}
+{% block content %}
+    {% if 'инженер' in prof or 'строит' in prof %}
+        <h2>Инженерные тренажеры</h2> 
+        <img id="image1" src="https://tehnoteca.ru/img/417/416165/body_solid_g9s_1.jpg" width="200" alt="здесь должна быть картинка1">
+    {% else %}
+        <h2>Научные симуляторы</h2>
+        <img id="image1" src="https://i.siteapi.org/jtt8_vlfW8VtMVhfLYLjMo0VkMw=/0x0:1200x900/s2.siteapi.org/095a57e775e641a/img/g1qagtqgxy8k8cwok4sog8cw8wokks" width="200" alt="здесь должна быть картинка2">
+    {% endif %}
+{% endblock %}
